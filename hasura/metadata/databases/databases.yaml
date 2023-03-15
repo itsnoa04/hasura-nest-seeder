@@ -1,1 +1,12 @@
-[]
+- name: default
+  kind: postgres
+  configuration:
+    connection_info:
+      database_url: postgres://itsnoa04:HQAShquT2M1r@ep-wild-cake-576091.us-west-2.aws.neon.tech/neondb
+      isolation_level: read-committed
+      pool_settings:
+        connection_lifetime: 600
+        idle_timeout: 180
+        max_connections: 50
+        retries: 10
+      use_prepared_statements: true
